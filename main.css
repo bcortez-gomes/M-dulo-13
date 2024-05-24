@@ -1,0 +1,177 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Freeman", sans-serif;
+}
+
+/*Inserir mouse hover na logo*/
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+}
+
+header {
+    padding: 25px;
+}
+
+header img {
+    height: 75px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header{
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #000000;
+}
+
+.nav-link:hover{
+    color: #f72f2f;
+}
+
+#carouselTextos {
+    padding-left: 200px;
+    padding-right: 200px;
+    background-color: black;
+    color: white;
+}
+
+.carousel-text {
+    display: flex;
+    justify-content: center;
+    padding-top: 11px;
+}
+
+.carousel-text {
+    text-align: center;
+}
+
+.novidades h1 {
+    padding-top: 65px;
+    padding-bottom: 30px;
+}
+
+#itemNovidades {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+}
+
+.novidades img {
+    width: 348.98px;
+    height: 348.98px;
+    padding-bottom: 20px;
+}
+
+.novidades h3 {
+    padding-bottom: 8px;
+}
+
+.promocoes h1 {
+    padding-top: 65px;
+    padding-bottom: 30px;
+}
+
+#carouselTelaInicial img {
+    border-radius: 4px;
+}
+
+#cardpromo {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+
+}
